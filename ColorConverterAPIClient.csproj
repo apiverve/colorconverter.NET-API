@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.ColorConverter</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/colorconverter</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Color Converter is a simple tool for converting color formats. It returns the color converted to the specified format.</Description>
+    <RepositoryUrl>https://github.com/apiverve/colorconverter-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>color converter; color converter api; color converter tool; color converter software; color converter service; color converter library; color converter sdk; color converter code; color converter script; color converter program; color converter application; color converter app; color converter utility; color converter helper; color converter helper tool; color converter helper software; color converter helper service; color converter helper library; color converter helper sdk; color converter helper code; color converter helper script; color converter helper program; color converter helper application; color converter helper app; color converter helper utility; color converter helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
