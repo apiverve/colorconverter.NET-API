@@ -37,11 +37,11 @@ public class data
     [JsonProperty("cmyk")]
     public string cmyk { get; set; }
 
-    [JsonProperty("name")]
-    public string name { get; set; }
-
     [JsonProperty("ansi16")]
     public int ansi16 { get; set; }
+
+    [JsonProperty("name")]
+    public string name { get; set; }
 
     [JsonProperty("channels")]
     public channels channels { get; set; }
