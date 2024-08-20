@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new colorconverterQueryOptions {
+var queryOptions = new ColorConverterQueryOptions {
   hex = "FF0000"
 };
 ```
@@ -107,7 +107,8 @@ if(response.error != null) {
       "hexChannels": 1,
       "hslChannels": 3
     }
-  }
+  },
+  "code": 200
 }
 ```
 
