@@ -4,64 +4,67 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class channels
-{
-    [JsonProperty("rgbChannels")]
-    public int rgbChannels { get; set; }
+    /// <summary>
+    /// Channels data
+    /// </summary>
+    public class Channels
+    {
+        [JsonProperty("rgbChannels")]
+        public int RgbChannels { get; set; }
 
-    [JsonProperty("cmykChannels")]
-    public int cmykChannels { get; set; }
+        [JsonProperty("cmykChannels")]
+        public int CmykChannels { get; set; }
 
-    [JsonProperty("ansiChannels")]
-    public int ansiChannels { get; set; }
+        [JsonProperty("ansiChannels")]
+        public int AnsiChannels { get; set; }
 
-    [JsonProperty("hexChannels")]
-    public int hexChannels { get; set; }
+        [JsonProperty("hexChannels")]
+        public int HexChannels { get; set; }
 
-    [JsonProperty("hslChannels")]
-    public int hslChannels { get; set; }
+        [JsonProperty("hslChannels")]
+        public int HslChannels { get; set; }
 
-}
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("hex")]
+        public string Hex { get; set; }
 
-public class data
-{
-    [JsonProperty("hex")]
-    public string hex { get; set; }
+        [JsonProperty("rgb")]
+        public string Rgb { get; set; }
 
-    [JsonProperty("rgb")]
-    public string rgb { get; set; }
+        [JsonProperty("hsl")]
+        public string Hsl { get; set; }
 
-    [JsonProperty("hsl")]
-    public string hsl { get; set; }
+        [JsonProperty("cmyk")]
+        public string Cmyk { get; set; }
 
-    [JsonProperty("cmyk")]
-    public string cmyk { get; set; }
+        [JsonProperty("ansi16")]
+        public int Ansi16 { get; set; }
 
-    [JsonProperty("ansi16")]
-    public int ansi16 { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
-    [JsonProperty("name")]
-    public string name { get; set; }
+        [JsonProperty("channels")]
+        public Channels Channels { get; set; }
 
-    [JsonProperty("channels")]
-    public channels channels { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-}
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
